@@ -1,0 +1,91 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Grid principal */
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-items: center;
+}
+
+/* Primer Pokémon grande */
+.pokemon-card.big {
+  grid-column: span 3;
+  width: 300px;
+  height: 300px;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+/* Estilo general para tarjetas */
+.pokemon-card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  justify-content: center;  
+}
+
+/* Imagen de Pokémon */
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+}
+
+/* Estilo del buscador */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+  background-color: white;
+  color: black;
+}
+
+.search-bar button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #0056b3;
+}
